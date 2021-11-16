@@ -5,7 +5,7 @@ This repository contains [Refaster templates](http://errorprone.info/docs/refast
 Note that some Refaster templates use features that are currently only available in the [Picnic fork](https://github.com/picnicSupermarket/error-prone) of Error Prone. 
 
 ## Goal of the Refaster templates
-The templates are created and used for a thesis project that is done at Picnic Technologies.
+The templates are created and used for a thesis project that is done at [Picnic Technologies](https://github.com/PicnicSupermarket).
 The title of the thesis is: <br/>
 <b>Towards Automated Library Migrations with Error Prone and Refaster</b>
 <br/><br/>
