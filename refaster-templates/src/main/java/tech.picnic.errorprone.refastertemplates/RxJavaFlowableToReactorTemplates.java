@@ -40,7 +40,6 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 import tech.picnic.errorprone.migration.util.RxJavaReactorMigrationUtil;
-import tech.picnic.errorprone.refaster.util.IsArray;
 
 /** The Refaster templates for the migration of the RxJava Flowable type to Reactor */
 final class RxJavaFlowableToReactorTemplates {
@@ -194,12 +193,12 @@ final class RxJavaFlowableToReactorTemplates {
   // XXX: Or should this be Object[] instead of T...? The test doesn't trigger.
   static final class FlowableFromArray<T> {
     @BeforeTemplate
-    Flowable<T> before(@Matches(IsArray.class) T[] items) {
+    Flowable<T> before(T[] items) {
       return Flowable.fromArray(items);
     }
 
     @BeforeTemplate
-    Flowable<T> before2(@Matches(IsArray.class) T... items) {
+    Flowable<T> before2(T... items) {
       return Flowable.fromArray(items);
     }
 
