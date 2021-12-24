@@ -13,7 +13,7 @@ For the validation of the research, we performed a migration on two codebases.
 One codebase is provided by Picnic and the other is open source; [Gravitee](https://github.com/rickie/gravitee-access-management).
 
 ## General remarks
-- The annotation `@CanTransformToTargetType` can only be used together with the Picnic fork
+- The annotation `@CanTransformToTargetType` can only be used together with the Picnic fork (currently only with the `rossendrijver/return_type` branch. 
 - The `*TestInput.java` and `*TestOutput.java` are taken from a private codebase that is yet to be open sourced. The `input` and `output` files are used to validate the Refaster templates.  
 
 
